@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use AtomDisloGen, please cite the associated paper."
+title: "AtomDisloGen: Atomistic Dislocation Generator"
+authors:
+  - family-names: Zhang
+    given-names: Jin-Yu
+  - family-names: Zhang
+    given-names: Wen-Zheng
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Zhang
+      given-names: Jin-Yu
+    - family-names: Zhang
+      given-names: Wen-Zheng
+  title: "Atomistic construction of dislocation-containing configurations for molecular dynamics simulations"
+  journal: "Modelling and Simulation in Materials Science and Engineering"
+  volume: 27
+  year: 2019
+  start: 035008
