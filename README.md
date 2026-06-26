@@ -1,19 +1,27 @@
 # AtomDisloGen: Atomistic Dislocation Generator
 
-AtomDisloGen is a C++ research code for constructing dislocation-containing atomic configurations for atomistic simulations. The code implements an atomistic version of the Volterra dislocation construction procedure: a discontinuous displacement field is applied across a chosen cut surface, and the point defects generated on the cut surface are subsequently removed by adding or deleting atoms.
+## Introduction
 
-The program is intended for materials simulation researchers who need initial atomic configurations containing dislocation loops or curved dislocation lines with user-defined Burgers vectors and geometries.
+AtomDisloGen is a C++ research code for constructing dislocations in atomistic simulations and generating dislocation-containing atomic configurations for molecular dynamics simulations. It is intended for researchers who need initial LAMMPS-style atomic configurations containing dislocation loops, curved dislocation lines, or user-defined dislocation geometries with prescribed Burgers vectors. The code implements an atomistic version of the Volterra dislocation construction procedure: a discontinuous displacement field is applied across a chosen cut surface, and the point defects generated near the cut surface are subsequently removed by adding or deleting atoms.
 
 This repository should be regarded as an early research-code release rather than a polished software package. The present implementation was developed for specific atomistic-simulation workflows and may require adaptation before use in other systems, boundary conditions, input/output formats, or larger-scale applications. Users are encouraged to inspect the algorithm carefully and modify the code for their own research purposes. Please note that this repository is provided as an open research-code release, and active maintenance is not guaranteed.
 
 > **AI-assisted documentation notice**  
-> This README was translated and reorganized from the original Chinese technical notes with assistance from ChatGPT. The code and scientific method should be checked by the maintainers before release.
+> This README was translated and reorganized from the original Chinese technical notes with assistance from ChatGPT. Users should verify the terminology, equations, and code behavior for their own applications.
 
-## Citation
+## Keywords
 
-If you use this code or a modified version of it, please cite:
+atomistic dislocation construction; dislocation generator; dislocation-containing atomic configuration; molecular dynamics; LAMMPS data file; Volterra dislocation construction; solid-angle method; Burgers vector; cut surface; dislocation loop; curved dislocation line; FCC; BCC; SC; partial dislocation; Shockley partial; Frank partial.
 
-> Jin-Yu Zhang and Wen-Zheng Zhang, *Modelling and Simulation in Materials Science and Engineering* **27**, 035008 (2019).
+This repository may also be relevant to users searching for tools to build dislocations, generate dislocation configurations, insert dislocations into crystals, construct dislocation loops, or prepare dislocation-containing initial structures for molecular dynamics simulations.
+
+## Associated paper and citation
+
+AtomDisloGen is associated with the method reported in:
+
+> J.-Y. Zhang and W.-Z. Zhang, “A general method to construct dislocations in atomistic simulations,” *Model. Simul. Mater. Sci. Eng.* **27**, 035008 (2019).
+
+If you use AtomDisloGen or a modified version of this code in academic work, please cite the paper above.
 
 ## License
 
