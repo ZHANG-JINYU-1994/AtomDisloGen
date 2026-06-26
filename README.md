@@ -227,7 +227,7 @@ This file can be used as a LAMMPS-style initial atomic configuration after check
 - The generated structures should normally be relaxed by energy minimization or molecular dynamics before production simulations.
 - The Nye-tensor-based `identify_disl()` routine is currently commented out and should not be considered an active feature of the default release.
 
-## Suggested repository layout
+## Repository layout
 
 ```text
 .
